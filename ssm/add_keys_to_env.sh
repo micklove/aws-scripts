@@ -58,7 +58,7 @@ validate_params() {
 
 
 #
-# If we can't parse the given json ($1), just exit with a message and jq exist status as return code
+# If we can't parse the given json ($1), just exit with a message and jq exit status as return code
 #
 validate_json() {
     if jq -e . >/dev/null 2>&1 <<<"${1}"; then
